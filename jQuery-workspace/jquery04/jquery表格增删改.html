@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            //删除
+            $(".btn01").click(function() {
+                var flag = confirm("是否删除?");
+                if (flag) {
+                    $(".table input[type='checkbox']").each(function() {
+                        if ($(this).is(':checked')) {
+                            $(this).parents("tr").remove();
+                        }
+                    })
+                }
+            });
+
+            //添加
+            $(".btn02").click(function() {
+                var $tr = $(".table tr").last().clone();
+                var $input = $tr.children().children();
+                $input.prop("checked", false);
+                $(".table").append($tr);
+            });
+
+            var flag = false;
+            //修改
+            $(".btn03").click(function() {
+
+                if (!flag) {
+                    $(".table input[type='checkbox']").each(function() {
+                        if ($(this).is(':checked')) {
+                            var $tr = $(this).parents("tr");
+                            $tr.find("td").each(function(index, el) {
+                                if (index != 0) {
+                                    var $val = $(this).text();
+                                    $(this).html("<input type='text' value=" + $val + "></input>");
+                                    $(".btn03").text("保存");
+                                    flag = true;
+                                }
+                            })
+                        }
+                    })
+                } else {
+                    $(".table input[type='checkbox']").each(function() {
+                        $(".table input[type='checkbox']").each(function() {
+                            if ($(this).is(':checked')) {
+                                var $tr = $(this).parents("tr");
+                                $tr.find("td").each(function(index, el) {
+                                    if (index != 0) {
+                                        var $val = $(this).children("input").val();
+                                        $(this).children("input").remove();
+                                        $(this).text($val);
+                                        $(".btn03").text("修改");
+                                        flag = false;
+                                    }
+                                })
+                            }
+                        })
+                    });
+                }
+            });
+        });
+    </script>
+    <style>
+        .table {
+            width: 700px;
+        }
+        
+        .table tr {
+            width: 20%;
+        }
+        
+        .table tr td {
+            border: hotpink 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <tr>
+            <td><input type="checkbox" name="ck01"></input>
+            </td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="ck01"></input>
+            </td>
+            <td>222</td>
+            <td>333</td>
+            <td>222</td>
+            <td>222</td>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="ck01"></input>
+            </td>
+            <td>333</td>
+            <td>333</td>
+            <td>333</td>
+            <td>333</td>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="ck01"></input>
+            </td>
+            <td>444</td>
+            <td class="td04">444</td>
+            <td>444</td>
+            <td>444</td>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="ck01"></input>
+            </td>
+            <td>555</td>
+            <td>555</td>
+            <td>555</td>
+            <td>555</td>
+
+        </tr>
+    </table>
+    <button class="btn01">删除</button>
+    <button class="btn02">添加新行</button><button class="btn03">修改</button>
+</body>
+
+</html>

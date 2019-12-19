@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function aaa(){
+				var str = '          abc  def      ';
+				var str1 = str.replace(/^\s+|\s+$/g,'');
+				document.write(str1);
+			}
+			aaa();
+			
+			/*
+			 定义一个商品对象:
+			 属性 : 商品名称,商品价格,商品数量,商品单位
+			 方法:  出库,入库,统计
+			 * */
+			//ES5
+			var page = {
+				data: {
+					name :'',
+					price : 2.0,
+					num: 10,
+					unit : '袋' 
+				},
+				outer(){
+					
+				}
+				out : function(){
+					alert(this.data.name);
+				},
+				in_d: function(){
+					alert(this.data.price);
+				},
+                sale : function(){
+                	alert(this.out());
+                }
+			};
+			
+			function getproduct(page)
+			{
+			      page.out();
+			      page.in_d();
+			      page.sale();
+			}
+			
+			getproduct(page);
+		</script>
+	</head>
+	<body>
+		<button onclick="getproduct()"></button>
+	</body>
+</html>

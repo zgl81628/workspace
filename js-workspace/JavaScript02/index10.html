@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//静态属性
+			function test(){
+				   var  pattern = /(g)oogle/;
+					var  str = 'This is google！';
+					pattern.test(str);			//执行一下
+					alert(RegExp.input);			//This is google！
+					alert(RegExp.leftContext);		//This is 
+					alert(RegExp.rightContext);		//！
+					alert(RegExp.lastMatch);		//google
+					alert(RegExp.lastParen);		//g
+					alert(RegExp.multiline);		  //false
+
+			}
+			//实例属性
+			function test01(){
+				var  str = 'This is google,google！';
+				var  pattern = /google/ig;
+				pattern.test(str);
+				alert(pattern.global);	//true，是否全局了
+				alert(pattern.ignoreCase);	//true，是否忽略大小写
+				alert(pattern.multiline);		//false，是否支持换行
+				alert(pattern.lastIndex);		//0，下次的匹配位置
+				alert(pattern.source);	//google，正则表达式的源字符串
+
+			}
+			//test(); 
+			test01();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

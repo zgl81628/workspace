@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#container{
+				width: 280px;
+				height: 430px;
+				background-image: url(img/2019-10-12_135330.png);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.item{
+				width: 200px;
+				height: 200px;
+				background-color: rgba(255,255,255,0.5);
+				border-radius: 50%;
+				animation: go 3s linear 0s infinite alternate;
+			}
+			@keyframes go{
+				0%{
+					transform: scale(-1.5);
+					opacity: 0.5;
+				}
+				25%{
+					transform: scale(-1);
+					opacity: 0.3;
+				}
+				50%{
+					transform: scale(0);
+					opacity: 0;
+				}
+				75%{
+					transform: scale(1);
+					opacity: 0.3;
+				}
+				100%{
+					transform: scale(1.5);
+					opacity: 0.5;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+		    <div class="item"></div>
+		</div>
+	</body>
+</html>

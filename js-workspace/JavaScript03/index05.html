@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<img id="img_id" src="img/2019-10-15_104651.png"  name="img1"/>
+		<img  src="img/2019-10-15_104652.png" name="img2"/>
+		<img  src="img/2019-10-15_104653.png" name="img3"/>
+		<img class="bbb" src="img/2019-10-15_104654.png" name="img4"/>
+		<img  src="img/2019-10-15_104655.png" name="img5"/>
+		<button name="img5">按钮</button>
+	</body>
+</html>
+<script>
+	
+	function aaa(){
+		var obj = document.getElementById('img_id');
+		var obj1= document.getElementsByName('img1');
+		//alert(obj1[0].src);
+		
+		var obj2 = document.getElementsByTagName('img');
+		//alert(obj2[2].src);
+		
+		var obj3 = document.getElementsByClassName('bbb');
+		//alert(obj2[0].src);
+		
+		 var imgsrc = document.images[4].src;
+		 //alert(imgsrc);
+		 
+		  var imgsrc1 = document.images.img5;
+		  //alert(imgsrc1.src);
+		  var imgsrc2 = document.img5;  //很危险
+		  //alert(imgsrc2);
+	}
+	aaa();
+</script>

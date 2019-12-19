@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let arr = [1, 2, 3];
+        arr.forEach((item, index) => console.log(`${item}-----${index}`));
+        let arr_map = arr.map((item, index) => item + 1);
+        console.log(arr_map);
+
+        let arr_filter = arr.filter((item) => item > 1);
+        console.log(arr_filter);
+
+        let arr_some = arr.some((item) => item >= 3);
+        console.log(arr_some);
+
+        let arr_every = arr.every((item, index) => item > 1);
+        console.log(arr_every);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

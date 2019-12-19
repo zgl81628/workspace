@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function btn_clik(){
+				var obj_arrs = document.getElementsByTagName('li');
+				for (var i = 0; i < obj_arrs.length; i++) {
+					obj_arrs[i].style.color = '#FF69B4';
+				}
+			}
+			
+			function get_color(){
+				var obj = document.getElementsByTagName('li')[0];
+				var mycolor =  obj.style.color;
+				alert(mycolor);
+			}
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+		</ul>
+		<button onclick="btn_clik()">按钮</button>
+		<button onclick="get_color()">获得颜色</button>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".btn").click(function() {
+                alert("点击按钮");
+            });
+            $("p").mouseout(function() {
+                $(this).removeClass("p1");
+            });
+            $("p").mouseover(function() {
+                $(this).addClass("p1");
+            });
+        });
+    </script>
+    <style>
+        .p1 {
+            font-size: 24px;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">按钮</button>
+    <p>水电费水电费</p>
+</body>
+
+</html>

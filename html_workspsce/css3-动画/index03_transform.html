@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+			    width: 300px;
+			    height: 250px;
+			    border: 1px solid #000;
+			    margin: 50px auto;
+			    position: relative;
+			    transform-style: preserve-3d;
+			}
+			.box img{
+			    position: absolute;
+			    left: 10px;
+			    top: 0px;
+			    transform: perspective(800px) rotateY(0deg);
+			    transition: all 500ms ease;
+			    backface-visibility: hidden;
+			}
+			.box:hover img{
+			    transform: perspective(800px) rotateY(180deg);
+			}
+			.box .back{
+			    width: 224px;
+			    height: 224px;
+			    background-color: yellow;
+			    position: absolute;
+			    left: 10px;
+			    text-align: center;
+			    line-height: 240px;
+			    transform: perspective(800px) rotateY(-180deg);
+			    transition: all 500ms ease;      /*缓冲运动*/
+			    backface-visibility: hidden;
+			}
+			.box:hover .back{
+			    transform: perspective(800px) rotateY(0deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+	    <img src="img/2019-09-30_143536.png" alt="路飞">
+	    <div class="back">路飞6666</div>
+</div>
+	</body>
+</html>

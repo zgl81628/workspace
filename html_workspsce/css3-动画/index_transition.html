@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: gold;
+				/*transition: width 2s ease; */
+				/*transition: width 2s ease,height 2s ease;*/
+				transition-property: width height background-color;
+				transition-duration: 2s;
+				transition-timing-function: ease linear;
+			}
+			div:hover{
+				width: 500px;
+				height: 500px;
+				background-color: #03A9F4;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

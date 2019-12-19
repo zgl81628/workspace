@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:14:49:53 +0800] "GET /lesson08/product?method=add_product HTTP/1.1" 200 - http-bio-8090-exec-1 26
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:14:49:53 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8090-exec-3 0
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:14:50:02 +0800] "GET /lesson08/product?method=del_product HTTP/1.1" 200 - http-bio-8090-exec-5 1
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:14:50:12 +0800] "GET /lesson08/product?method=find_product HTTP/1.1" 200 - http-bio-8090-exec-8 1
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:14:52:53 +0800] "GET /lesson08/product?method=add_product HTTP/1.1" 200 - http-bio-8090-exec-1 27
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:14:54:54 +0800] "GET /lesson08/product?method=add_product HTTP/1.1" 200 52 http-bio-8090-exec-1 817
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:15:00:47 +0800] "GET /lesson08/product.do/add_product HTTP/1.1" 404 1013 http-bio-8090-exec-1 27
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:15:02:09 +0800] "GET /lesson08/product.do/add_product HTTP/1.1" 200 - http-bio-8090-exec-1 32
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:15:07:26 +0800] "GET /lesson08/product.do/add_product?age=12 HTTP/1.1" 500 1637 http-bio-8090-exec-1 299
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:15:10:21 +0800] "GET /lesson08/product.do/add_product?age=12 HTTP/1.1" 200 - http-bio-8090-exec-1 30
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:15:11:39 +0800] "GET /lesson08/product.do/add_product?age=12 HTTP/1.1" 200 52 http-bio-8090-exec-1 50
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:15:12:26 +0800] "GET /lesson08/product.do/add_product?age=12 HTTP/1.1" 200 52 http-bio-8090-exec-1 51
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:15:12:55 +0800] "GET /lesson08/product.do?method=add_product HTTP/1.1" 200 52 http-bio-8090-exec-4 5
+0:0:0:0:0:0:0:1 - - [19/Dec/2019:15:13:11 +0800] "GET /lesson08/product.do?method=add_product&age=3333 HTTP/1.1" 200 52 http-bio-8090-exec-7 1

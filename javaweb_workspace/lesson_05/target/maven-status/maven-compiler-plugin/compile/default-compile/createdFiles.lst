@@ -1,0 +1,5 @@
+com\neusoft\cookie\UserInfo.class
+com\neusoft\cookie\BeanTools.class
+com\neusoft\cookie\Cookie_Servlet.class
+com\neusoft\cookie\Cookie_test.class
+com\neusoft\cookie\Login_Servlet.class

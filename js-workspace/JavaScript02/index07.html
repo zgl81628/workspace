@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function aaa(){
+				
+				var today = new Date();
+				var today2 = new Date(2025,10,11);
+				document.write(today2.getDay()+'<br/>');
+				
+				var sss = Date.UTC(today.getFullYear(),today.getMonth()+1
+				,today.getDate(),today.getHours(),today.getMinutes()
+				,today.getSeconds(),today.getMilliseconds());
+				
+				var sss1 = Date.UTC(today2.getFullYear(),today2.getMonth()+1
+				,today2.getDate(),today2.getHours(),today2.getMinutes()
+				,today2.getSeconds(),today2.getMilliseconds());
+				
+				document.write(sss1+'<br/>');
+				
+				var sss2 = Math.round((sss1-sss)/(24*60*60*1000));
+				
+				document.write(sss2+'<br/>');
+			}
+			
+			aaa();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

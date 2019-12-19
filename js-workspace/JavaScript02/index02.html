@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function aaa(){
+			   var box = new Object();
+			   box.name = '张三';
+			   box.age = 21;
+			   
+			   box.run = function(){
+			   	alert('运行!!!!!');
+			   }
+			   
+			   return box;
+			}
+			var box = aaa();
+			document.write(box.name);
+			box.run();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

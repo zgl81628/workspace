@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function aa() {
+            let node = {
+                loc: {
+                    start: {
+                        line: 1,
+                        column: 5
+                    }
+                }
+            };
+            let {
+                loc,
+                loc: {
+                    start
+                },
+                loc: {
+                    start: {
+                        line,
+                        column
+                    }
+                }
+            } = node;
+            console.log(`${loc}‐‐${start}‐‐${line}‐‐${column}`);
+            console.log(loc);
+        }
+        aa();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

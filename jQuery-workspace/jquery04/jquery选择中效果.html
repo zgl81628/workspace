@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("button").click(function() {
+                //$(":checkbox:eq(4)").attr("checked", true);
+                $(":checkbox:eq(4)").prop("checked", true);
+            })
+        });
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <select id="aaa">
+        <option>1号</option>
+        <option>2号</option>
+        <option>3号</option>
+        <option>4号</option>
+        <option>5号</option>
+        <option>6号</option>
+        <option>7号</option>
+    </select>
+
+    <select id="bbb" multiple="multiple" SIZE="10">
+        <option>1号</option>
+        <option>2号</option>
+        <option>3号</option>
+        <option>4号</option>
+        <option>5号</option>
+        <option>6号</option>
+        <option>7号</option>
+    </select>
+    <hr />
+    <input type="checkbox" name="aaa">1号</input>
+    <input type="checkbox" name="aaa">2号</input>
+    <input type="checkbox" name="aaa">3号</input>
+    <input type="checkbox" name="aaa">4号</input>
+    <input type="checkbox" name="aaa">5号</input>
+    <input type="checkbox" name="aaa">6号</input>
+    <hr />
+    <button>选中5号</button>
+</body>
+
+</html>

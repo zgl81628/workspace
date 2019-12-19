@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#div01").css("background-color", "red");
+            $("img").addClass("img01");
+            $("#li01").next().addClass("li");
+        });
+    </script>
+    <style>
+        .img01 {
+            width: 200px;
+            height: 200px;
+            border: deeppink 5px solid;
+        }
+        
+        .li {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <DIV id="div01">div01</DIV>
+    <img src="image/2019-11-28_104736.png" width="100px" height="100px" />
+
+    <ul>
+        <li>水电费水电费</li>
+        <li id="li01">水电费水电费</li>
+        <li>水电费水电费</li>
+        <li>水电费水电费</li>
+    </ul>
+</body>
+
+</html>

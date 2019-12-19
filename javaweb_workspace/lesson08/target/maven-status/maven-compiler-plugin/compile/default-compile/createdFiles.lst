@@ -1,0 +1,3 @@
+com\neusoft\Main.class
+com\neusoft\servlet\ProductServlet.class
+com\neusoft\comm\BaseServlet.class

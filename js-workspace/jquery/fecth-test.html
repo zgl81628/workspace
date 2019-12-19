@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        fetch('weather.txt')
+            .then(res => {
+                return res.json();
+            }).then(data => {
+            	let {error_code,reason,result} = data;
+                let {future,realtime} = result;
+                for(let index in future){
+                	let {date,direct,temperature,weather,wid} = future[index];
+                	console.log(date); 
+                	console.log(direct); 
+                	console.log(weather); 
+                }
+            });
+    </script>
+</head>
+
+<body>
+   
+</body>
+</html>

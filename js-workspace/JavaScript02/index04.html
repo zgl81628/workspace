@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function aaa(){
+				
+				var str = '张三';
+				var str1 = encodeURI(str);
+				var str2 = encodeURIComponent(str);
+				
+				var str3 = decodeURI(str1);
+				var str4 = decodeURIComponent(str2);
+				alert(str4);
+			}
+			
+			function bbb(){
+				
+				var str1 = '1+2';
+				var s = 1;
+				var sum = eval(str1)+s;
+				alert(sum);
+			}
+			//aaa();
+			bbb();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

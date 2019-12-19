@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="844" prefWidth="1500" stylesheets="@homeUser.css" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeUser">
+   <children>
+
+      <Button fx:id="btn_close" layoutX="1457.0" layoutY="-1.0" mnemonicParsing="false" onAction="#click_btn_close" prefHeight="45.0" prefWidth="43.0" />
+      <Button fx:id="btn_min" layoutX="1406.0" layoutY="-1.0" mnemonicParsing="false" onAction="#click_btn_min" prefHeight="45.0" prefWidth="43.0" />
+      
+      <Button fx:id="btn_search" layoutX="814.0" layoutY="207.0" mnemonicParsing="false" onAction="#click_btn_search" prefHeight="200.0" prefWidth="166.0" />
+      <Button fx:id="btn_lent" layoutX="1082.0" layoutY="207.0" mnemonicParsing="false" onAction="#click_btn_lent" prefHeight="194.0" prefWidth="138.0" />
+      <Button fx:id="btn_back" layoutX="1311.0" layoutY="214.0" mnemonicParsing="false" onAction="#click_btn_back" prefHeight="184.0" prefWidth="124.0" />
+      <Button fx:id="btn_user" layoutX="1180.0" layoutY="482.0" mnemonicParsing="false" onAction="#click_btn_user" prefHeight="174.0" prefWidth="146.0" />
+      <Button fx:id="btn_list" layoutX="933.0" layoutY="482.0" mnemonicParsing="false" onAction="#click_btn_list" prefHeight="174.0" prefWidth="146.0" />
+   </children>
+</AnchorPane>

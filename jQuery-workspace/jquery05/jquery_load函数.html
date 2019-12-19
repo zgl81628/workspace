@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#d01").load('http://apis.juhe.cn/simpleWeather/query?city=武汉&key=0f0b3d5611a9da08749d57d651f70db3', function(response, status, xhr) {
+                alert(status);
+                if (status == 'success') {
+                    $("#d01").text(xhr.responseText);
+                }
+            });
+        });
+    </script>
+    <style>
+        #d01 {
+            height: 300px;
+            border: crimson 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d01"></div>
+</body>
+
+</html>

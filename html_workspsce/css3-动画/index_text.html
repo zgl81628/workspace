@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小效果</title>
+ 
+	<style type="text/css">
+		/*通配符重置浏览器默认的两个值，
+		对本文没有太大影响，不知道可以无视*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.div1{
+			width: 300px;
+			height: 100px;
+			padding-top: 20px;
+			line-height: 100px;
+			margin:200px auto 0;
+			text-align: center;
+			font-size: 40px;
+			font-weight: bold;
+			font-family: "微软雅黑";
+			background: #000;
+			color:#F60;
+		}
+		.div1:hover{
+			text-shadow: 0px 0px 2px #fff,
+					0px -3px 3px #1EB,
+					0px -6px 4px #01DEFD,
+					0px -9px 5px #0BF,
+					0px -12px 6px #08F;
+			transition:all 1s linear;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div1">超炫火焰字</div>
+</body>

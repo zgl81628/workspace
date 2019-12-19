@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var fn01 = function(a, b) {
+            return a + b
+        }
+
+        function fn2(a, b) {
+            return a + b
+        }
+
+        var fn02 = (a, b) => a + b;
+
+        // 无参
+        var fn1 = function() {}
+        var fn1 = () => {}
+
+        // 单个参数
+        var fn2 = function(a) {}
+        var fn2 = a => {}
+
+        // 多个参数
+        var fn3 = function(a, b) {}
+        var fn3 = (a, b) => {}
+
+        // 可变参数
+        var fn4 = function(a, b, ...args) {}
+        var fn4 = (a, b, ...args) => {
+            console.log(args)
+        }
+
+        fn4(1, 2, {
+            name: '张三',
+            age: 21
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

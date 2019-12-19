@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function getJson(){
+				return new Promise((resolve, reject) => {
+					  fetch('weather.txt')
+					  	.then(res => {
+					  	   return res.json();
+			            })
+					  	.then((data)=>{
+					  	    let {error_code,result,reason} = data;
+					  	    if(error_code==0)
+			                resolve(result);
+			                else
+			                 reject(reason);
+			           })
+				});
+			}
+			
+			let p = getJson();
+			p.then((data)=>{
+			     console.log(data);
+				},(err)=>{
+					 console.log(err);
+		   });
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

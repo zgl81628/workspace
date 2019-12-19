@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@questionNaire.css" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.QuestionNaire">
+  <children>
+    <ScrollPane layoutX="0.0" layoutY="38.0" prefHeight="757.0" prefWidth="869.0">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1150.0" prefWidth="800.0">
+          <children>
+            <ImageView fitHeight="829.0" fitWidth="146.0" layoutX="787.0" layoutY="560.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccdded" height="1050.0" layoutX="36.0" layoutY="-5.0" opacity="0.22" stroke="BLACK" strokeType="INSIDE" width="788.0" />
+            <Label layoutX="62.0" layoutY="29.0" text="1.读者进入图书馆需要携带_____方可进入" />
+            <RadioButton fx:id="t_11" layoutX="82.0" layoutY="61.0" mnemonicParsing="false" text="身份证">
+              <toggleGroup>
+                <ToggleGroup fx:id="group1" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_12" layoutX="313.0" layoutY="61.0" mnemonicParsing="false" text="校园卡" toggleGroup="$group1" />
+            <RadioButton fx:id="t_13" layoutX="494.0" layoutY="61.0" mnemonicParsing="false" text="银行卡" toggleGroup="$group1" />
+            <Label layoutX="62.0" layoutY="99.0" text="2.读者行为的基本准则有（）" />
+            <RadioButton fx:id="t_21" layoutX="82.0" layoutY="140.0" mnemonicParsing="false" text="爱护书刊和设备">
+              <toggleGroup>
+                <ToggleGroup fx:id="group2" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_22" layoutX="276.0" layoutY="140.0" mnemonicParsing="false" text="遵守图书馆各项规章制度" toggleGroup="$group2" />
+            <RadioButton fx:id="t_23" layoutX="494.0" layoutY="140.0" mnemonicParsing="false" text="以上都是" toggleGroup="$group2" />
+            <Label layoutX="62.0" layoutY="182.0" text="3.进入图书馆须衣着得体、举止文明，以下哪种鞋不能入馆（）" />
+            <RadioButton fx:id="t_31" layoutX="82.0" layoutY="221.0" mnemonicParsing="false" text="运动鞋，皮鞋">
+              <toggleGroup>
+                <ToggleGroup fx:id="group3" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_32" layoutX="313.0" layoutY="221.0" mnemonicParsing="false" text="拖鞋" toggleGroup="$group3" />
+            <RadioButton fx:id="t_33" layoutX="494.0" layoutY="221.0" mnemonicParsing="false" text="高跟鞋" toggleGroup="$group3" />
+            <Label layoutX="62.0" layoutY="260.0" text="4.OPAC又被称为联机公共目录查询系统，图书馆外是否可以查询图书馆联机目录？" />
+            <RadioButton fx:id="t_41" layoutX="82.0" layoutY="295.0" mnemonicParsing="false" text="是">
+              <toggleGroup>
+                <ToggleGroup fx:id="group4" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_42" layoutX="313.0" layoutY="294.0" mnemonicParsing="false" text="否" toggleGroup="$group4" />
+            <RadioButton fx:id="t_43" layoutX="494.0" layoutY="298.0" mnemonicParsing="false" text="我也不清楚" toggleGroup="$group4" />
+            <Label layoutX="62.0" layoutY="329.0" text="5.关于借书证，错误的是（）" />
+            <RadioButton fx:id="t_51" layoutX="82.0" layoutY="367.0" mnemonicParsing="false" text="如果丢失，需要去一卡通中心补办">
+              <toggleGroup>
+                <ToggleGroup fx:id="group5" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_52" layoutX="82.0" layoutY="402.0" mnemonicParsing="false" text="可以借给同学" toggleGroup="$group5" />
+            <RadioButton fx:id="t_53" layoutX="82.0" layoutY="439.0" mnemonicParsing="false" text="借书需要使用一卡通" toggleGroup="$group5" />
+            <Label layoutX="62.0" layoutY="473.0" text="6.目前我国图书馆普遍采用的图书分类法是（）" />
+            <RadioButton fx:id="t_61" layoutX="82.0" layoutY="509.0" mnemonicParsing="false" text="《中国图书馆分类法》">
+              <toggleGroup>
+                <ToggleGroup fx:id="group6" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_62" layoutX="313.0" layoutY="509.0" mnemonicParsing="false" text="《杜威分类法》" toggleGroup="$group6" />
+            <RadioButton fx:id="t_63" layoutX="494.0" layoutY="510.0" mnemonicParsing="false" text="《科图法》" toggleGroup="$group6" />
+            <Label layoutX="62.0" layoutY="544.0" text="7.遗失本馆图书，应以完全相同的同版新书抵赔，并缴付新书加工手续费______元" />
+            <RadioButton fx:id="t_71" layoutX="82.0" layoutY="576.0" mnemonicParsing="false" text="5元">
+              <toggleGroup>
+                <ToggleGroup fx:id="group7" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_72" layoutX="82.0" layoutY="608.0" mnemonicParsing="false" text="100元" toggleGroup="$group7" />
+            <RadioButton fx:id="t_73" layoutX="82.0" layoutY="640.0" mnemonicParsing="false" text="20元" toggleGroup="$group7" />
+            <Label layoutX="62.0" layoutY="680.0" text="8.下列说法错误的是（）" />
+            <RadioButton fx:id="t_81" layoutX="82.0" layoutY="715.0" mnemonicParsing="false" text="为维护读者的公共利益，不得以任何物品抢占自习座位">
+              <toggleGroup>
+                <ToggleGroup fx:id="group8" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_82" layoutX="82.0" layoutY="750.0" mnemonicParsing="false" text="公共区域须自行保管个人物品，如发生遗失，责任自负" toggleGroup="$group8" />
+            <RadioButton fx:id="t_83" layoutX="82.0" layoutY="785.0" mnemonicParsing="false" text="存包柜可以存放任意个人物品" toggleGroup="$group8" />
+            <Label layoutX="62.0" layoutY="820.0" text="9.下列说法正确的是（） " />
+            <RadioButton fx:id="t_91" layoutX="82.0" layoutY="854.0" mnemonicParsing="false" text="可以在馆内吸烟">
+              <toggleGroup>
+                <ToggleGroup fx:id="group9" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_92" layoutX="82.0" layoutY="890.0" mnemonicParsing="false" text="为了方便同学们，同学们可以在图书馆吃东西" toggleGroup="$group9" />
+            <RadioButton fx:id="t_93" layoutX="82.0" layoutY="925.0" mnemonicParsing="false" text="为维护读者的公共利益，不得以任何物品抢占自习座位" toggleGroup="$group9" />
+            <Label layoutX="62.0" layoutY="965.0" text="10.图书馆对图书进行排架的依据是（）" />
+            <RadioButton fx:id="t_101" layoutX="82.0" layoutY="1000.0" mnemonicParsing="false" text="索书号">
+              <toggleGroup>
+                <ToggleGroup fx:id="group10" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="t_102" layoutX="313.0" layoutY="1000.0" mnemonicParsing="false" text="书名" toggleGroup="$group10" />
+            <RadioButton fx:id="t_103" layoutX="494.0" layoutY="1000.0" mnemonicParsing="false" text="条码" toggleGroup="$group10" />
+            <Button fx:id="submitbutton" layoutX="376.0" layoutY="1080.0" mnemonicParsing="false" onAction="#recruitSubmit" opacity="0.7" prefHeight="35.0" prefWidth="94.0"  text="提交">
+            </Button>
+            <ImageView fitHeight="57.0" fitWidth="205.0" image="$null" layoutX="303.0" layoutY="17.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

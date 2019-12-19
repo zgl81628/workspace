@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function alias() {
+            let [a, b, c] = [1, 4, 5];
+            console.log(`${a}---${b}---${c}`);
+
+            let [foo, [
+                [bar], baz
+            ]] = [1, [
+                [7], 6
+            ]];
+            console.log(`${foo}---${bar}---${baz}`);
+
+            let [, , th] = [3, 5, 4];
+            console.log(`${th}`);
+
+            let [x, y] = [1, 2, 3];
+            console.log(`${x}------${y}`);
+
+            let [head, ...total] = [1, 2, 3, 4];
+            console.log(`${head}------${total}`);
+
+            let [m, [n], z] = [1, [2, 3], 4];
+            console.log(`${m}---${n}---${z}---`);
+
+            let [x1 = 1, y1 = x1] = [];
+            console.log(`${x1}---${y1}---`);
+
+            let [x2 = y2, y2 = 1] = [15];
+            console.log(`${x2}---${y2}---`);
+
+        }
+
+        alias();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

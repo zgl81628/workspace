@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function reg_test(){
+				var str = '水电费水电费AAAaaaAAA水电费水aaa电费';
+				var box = new RegExp('aaa','ig');
+				var box01 = /aaa/ig;
+				var bool = box.test(str);
+				//alert(bool);
+				var str1 = box01.exec(str);
+				alert(str1); 
+			}
+			reg_test();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

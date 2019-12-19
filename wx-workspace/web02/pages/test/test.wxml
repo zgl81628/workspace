@@ -1,0 +1,19 @@
+<view class='container01'>
+
+<view class='icon_01'>
+<van-icon name="chat" dot />
+<van-icon name="chat" info="9" />
+<van-icon name="chat" info="99+" />
+</view>
+
+<view class='icon_01'>
+<van-icon name="manager" dot size='24' />
+<van-icon name="hot" info="9" size='24'/>
+<van-icon name="goods-collect" info="99+" size='24'/>
+<van-icon name="new-arrival" dot size='24'/>
+</view>
+
+
+
+
+</view>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+//			function getNum()
+//			{
+//				var s = 12;
+//				
+//				function getstring()
+//				{
+//					alert('嵌套函数!!!!');
+//				}
+//				getstring();
+//			}
+//   		getNum();	
+
+
+            function getNum()
+			{
+				var s = 12;
+				
+				return function getstring()
+				{
+					alert('嵌套函数!!!!');
+				}
+			}
+
+          var ss = getNum();
+          ss();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="844" prefWidth="1500" stylesheets="@addBook.css" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddBook">
+   <children>
+      <TextField fx:id="text_name" layoutX="166.0" layoutY="223.0" prefHeight="48.0" prefWidth="286.0" promptText="名称">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField fx:id="text_num" layoutX="166.0" layoutY="316.0" prefHeight="48.0" prefWidth="275.0" promptText="书籍编号">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField fx:id="text_type" layoutX="166.0" layoutY="410.0" prefHeight="48.0" prefWidth="286.0" promptText="类别">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField fx:id="text_press" layoutX="166.0" layoutY="496.0" prefHeight="48.0" prefWidth="275.0" promptText="出版社">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField fx:id="text_writer" layoutX="167.0" layoutY="593.0" prefHeight="48.0" prefWidth="275.0" promptText="作者">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <Button fx:id="btn_ok" layoutX="132.0" layoutY="688.0" mnemonicParsing="false" onAction="#click_btn_ok" prefHeight="57.0" prefWidth="352.0">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+
+       <Button fx:id="btn_min" layoutX="1405.0" layoutY="-3.0" mnemonicParsing="false" onAction="#click_btn_min" prefHeight="48.0" prefWidth="50.0" />
+       <Button fx:id="btn_close" layoutX="1452.0" layoutY="-3.0" mnemonicParsing="false" onAction="#click_btn_close" prefHeight="48.0" prefWidth="50.0" />
+      <TableView fx:id="tableview_show" layoutX="673.0" layoutY="95.0" prefHeight="660.0" prefWidth="774.0">
+        <columns>
+          <TableColumn fx:id="table_name" prefWidth="162.0" text="名称" />
+            <TableColumn fx:id="table_num" prefWidth="123.0" text="编号" />
+            <TableColumn fx:id="table_type" prefWidth="143.0" text="类别" />
+            <TableColumn fx:id="table_press" prefWidth="204.0" text="出版社" />
+          <TableColumn fx:id="table_writer" prefWidth="139.0" text="作者" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

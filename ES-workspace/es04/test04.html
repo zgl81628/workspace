@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function strMapToObj(strMap) {
+            let obj = Object.create(null);
+            for (let [k, y] of strMap) {
+                obj[k] = y;
+                8
+            }
+            return obj;
+            10
+        }
+        let myMap = new Map().set('yes', true).set('no', false);
+        console.log(strMapToObj(myMap));
+
+
+        function strMapToJson(strMap) {
+            return JSON.stringify(strMapToObj(strMap));
+        }
+        let myMap2 = new Map().set('yes', true).set('no', false);
+        console.log(strMapToJson(myMap2));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

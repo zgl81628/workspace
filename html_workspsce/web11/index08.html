@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>有路网布局</title>
+		<style>
+			html,*{
+				padding: 0;
+				margin: 0;
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			ul{
+				list-style: none;
+			}
+			.nav a{
+				text-decoration: none;
+				color: white;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			header .top{
+				background-color: rgba(244,244,244,0.8);
+				line-height: 30px;
+				padding-left: 300px;
+			}
+			header .center{
+				width: 65%;
+				margin: 0 auto;
+				height: 120px;
+				border: 1px solid #00BFFF;
+			}
+			header .nav{
+				background-color: rgba(216,0,0,.8);
+				overflow: hidden;
+				line-height: 40px;
+			}
+            header .nav ul li{
+            	float: left;
+            }
+            #conaiter{
+            	width: 65%;
+				margin: 0 auto;
+				overflow: hidden;
+            }
+            #conaiter div{
+            	float: left;
+            }
+            #d01{
+            	width: 20%;
+            	height: 700px;
+            	background-color: #00BFFF;
+            }
+            #d02{
+            	width: 60%;
+            	height: 700px;
+            	background-color: #00FFFF;
+            }
+            #d03{
+            	width: 20%;
+            	height: 700px;
+            	background-color: #7FFF00;
+            }
+            .clear {
+            	width: 500px;
+            	height: 500px;
+            	background-color: #000000;
+            	clear: both;
+            }
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="top">您好!欢迎光临有路网</div>
+			<div class="center">2</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="conaiter">
+			<div id="d01">1</div>
+			<div id="d02">2</div>
+			<div id="d03">3</div>
+			<p class="clear"></p>
+		</div>
+		
+		<footer></footer>
+	</body>
+</html>

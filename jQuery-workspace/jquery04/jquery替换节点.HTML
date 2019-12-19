@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#d01 P").replaceWith($("<P>电饭锅撒的发生</P>"));
+            $($("<P>电饭锅撒的发生</P>")).replaceAll($("#d02 P"));
+        });
+    </script>
+    <style>
+        #d01 {
+            border: crimson 1px solid;
+        }
+        
+        #d02 {
+            border: crimson 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d01">
+        <h1>replaceWith替换</h1>
+        <p>替换的内容</p>
+    </div>
+
+    <hr />
+    <div id="d02">
+        <h1>replaceAll替换</h1>
+        <p>替换的内容</p>
+    </div>
+</body>
+
+</html>

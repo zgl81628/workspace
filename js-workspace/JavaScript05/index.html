@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#div01{
+				width: 200px;
+				height: 200px;
+			    background-color: hotpink;
+			}
+		</style>
+		<script>
+			
+			function out01(obj){
+				obj.style.backgroundColor = 'hotpink';
+			}
+			
+			function over01(obj)
+			{
+				obj.style.backgroundColor = 'gold';  
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="div01" onmouseout="out01(this)" onmouseover="over01(this)">
+		</div>
+	</body>
+</html>

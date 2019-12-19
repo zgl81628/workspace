@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.a{
+				color: blue;
+			}
+			.b{
+				color: red;
+			}
+		</style>
+		<script>
+			 function aaa(){
+			 	var bool = true;
+			 	var cls = '';
+			 	do{
+			 		var str = prompt('请输入字符串','');
+			 		if(str=='STOP')
+			 		{
+			 			cls = 'a';
+						bool = false;
+			 		}else{
+			 			cls = 'b';
+			 		}
+			 		document.write('<p class='+cls+'>'+str+'<p>');
+			 	}while(bool);
+			 	
+			 }
+			 aaa();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function aaa(obj){
+				if(obj.value==''||obj.length==0)
+				{
+					alert('不能为空,请输入内容!!1');
+				}
+			}
+			
+			function bbb(obj){
+				if(obj.value==''||obj.length==0) 
+				{
+					alert('不能为空,请输入内容!!2');
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="index.html" method="post">
+			用户名:<input  type="text" name="uname" onblur="aaa(this);"/><br/>
+			邮    件:<input  type="text" name="uname" onblur="bbb(this);"/><br/>
+			<input type="submit" value="提交"/>
+		</form>
+	</body>
+</html>

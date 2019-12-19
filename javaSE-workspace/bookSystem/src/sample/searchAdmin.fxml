@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="844" prefWidth="1500" stylesheets="@searchAdmin.css" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchAdmin">
+   <children>
+
+            <Label fx:id="label_name" alignment="CENTER" layoutX="164.0" layoutY="162.0" prefHeight="43.0" prefWidth="249.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+            <Label fx:id="label_num" alignment="CENTER" layoutX="171.0" layoutY="231.0" prefHeight="53.0" prefWidth="236.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+            <Label fx:id="label_type" alignment="CENTER" layoutX="171.0" layoutY="310.0" prefHeight="43.0" prefWidth="236.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+            <Label fx:id="label_press" alignment="CENTER" layoutX="190.0" layoutY="383.0" prefHeight="43.0" prefWidth="198.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+            <Label fx:id="label_writer" alignment="CENTER" layoutX="185.0" layoutY="461.0" prefHeight="43.0" prefWidth="208.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+            <Label fx:id="label_isOut" alignment="CENTER" layoutX="190.0" layoutY="534.0" prefHeight="45.0" prefWidth="198.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+            <Label fx:id="label_lentTo" alignment="CENTER" layoutX="196.0" layoutY="609.0" prefHeight="43.0" prefWidth="186.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+            <Label fx:id="label_fre" alignment="CENTER" layoutX="206.0" layoutY="683.0" prefHeight="53.0" prefWidth="166.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+
+            <ComboBox fx:id="select_box" layoutX="474.0" layoutY="69.0" prefHeight="53.0" prefWidth="236.0" promptText="请选择方式" />
+            <TextField fx:id="text_contain" layoutX="806.0" layoutY="74.0" prefHeight="43.0" prefWidth="370.0" promptText="请输入查询内容">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+       <Button fx:id="btn_min" layoutX="1404.0" layoutY="3.0" mnemonicParsing="false" onAction="#click_btn_min" prefHeight="43.0" prefWidth="48.0" />
+       <Button fx:id="btn_close" layoutX="1452.0" layoutY="-7.0" mnemonicParsing="false" onAction="#click_btn_close" prefHeight="53.0" prefWidth="48.0" />
+
+
+       <Button fx:id="btn_search" layoutX="1286.0" layoutY="67.0" mnemonicParsing="false" onAction="#click_btn_search" prefHeight="53.0" prefWidth="166.0" />
+            <TableView fx:id="tableview_show" layoutX="475.0" layoutY="154.0" onMouseClicked="#click_tableview" prefHeight="631.0" prefWidth="980.0">
+              <columns>
+                <TableColumn fx:id="table_name" prefWidth="168.0" text="名称" />
+                  <TableColumn fx:id="table_num" prefWidth="107.0" text="编号" />
+                  <TableColumn fx:id="table_type" prefWidth="110.0" text="类别" />
+                  <TableColumn fx:id="table_press" prefWidth="174.0" text="出版社" />
+                  <TableColumn fx:id="table_writer" prefWidth="127.0" text="作者" />
+                  <TableColumn fx:id="table_isOut" minWidth="5.0" prefWidth="103.0" text="在馆情况" />
+                  <TableColumn fx:id="table_lentTo" prefWidth="95.0" text="借书人" />
+                  <TableColumn fx:id="table_fre" prefWidth="92.0" text="借阅次数" />
+              </columns>
+            </TableView>
+
+   </children>
+</AnchorPane>

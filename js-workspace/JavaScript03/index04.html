@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="index.html" name="aaaa">首页1</a>
+		<a href="index.html" name="bb">首页2</a>
+		<a href="index.html" name="cccc">首页3</a>
+		<a href="index.html" name="ddd">首页4</a>
+	</body>
+</html>
+<script>
+			document.write('<hr/>');
+			function get_links(){
+				for (var i=0; i<document.anchors.length;i++) {
+					document.write(document.anchors[i].name+'<br/>');
+				}
+			}
+			get_links();
+</script>

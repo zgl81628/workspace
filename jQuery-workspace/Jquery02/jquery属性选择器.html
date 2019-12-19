@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            //$("h2[title]").css("color", "red");
+            //$("h2[title='sss']").css("color", "red");
+
+            // $("h2[title!='sss']").css("color", "red");
+            ///$("[href^='in']").css("color", "red");
+
+            //$("[href$='.jpg']").css("color", "red");
+            //$("[href*='s']").css("color", "red");
+            $("[href$='.jpg'][href*='s']").css("color", "red");
+        });
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h2>水电费水电费</h2>
+    <h2 title="是的">水电费水电费</h2>
+    <h2 title="sss">水电费水电费</h2>
+    <a href="index.html">首页</a>
+    <a href="index.html">首页</a>
+    <a href="index.jpg">首页</a>
+    <a href="sss.jpg">首页</a>
+</body>
+
+</html>

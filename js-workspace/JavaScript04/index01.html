@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.aaa{
+				color: hotpink;
+			}
+			.bbb{
+				color: red;
+			}
+			.ccc{
+				color: gold;
+			}
+		</style>
+	
+	</head>
+	<body>
+		 <p class="aaa">wo shi 谁!!!什么颜色!!!!</p>
+		<button type="button"  onclick="btn_clik1()" sss='我是老大'>红按钮</button>
+		<button type="button"  onclick="btn_clik2()" sss='我是老大'>黄按钮</button>
+		<button type="button"  onclick="btn_clik3()" sss='我是老大'>z正常</button>
+	</body>
+</html>
+	<script>
+			var obj = document.getElementsByClassName('aaa')[0];
+			function btn_clik(){
+				var classname = obj.getAttribute('sss');
+				alert(classname);
+				///alert(obj.sss);
+			}
+			
+			function btn_clik1(){
+				//var obj = document.getElementsByClassName('aaa')[0];
+                 obj.setAttribute('class','bbb');
+			}
+			
+			function btn_clik2(){
+				//var obj = document.getElementsByClassName('aaa')[0];
+                 obj.setAttribute('class','ccc'); 
+			}
+			
+			function btn_clik3(){
+				//var obj = document.getElementsByClassName('aaa')[0];
+                 obj.removeAttribute('class');
+			}
+		</script>

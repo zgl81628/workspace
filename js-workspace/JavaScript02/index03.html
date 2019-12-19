@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//class
+			function bb(){
+				var stu = {
+				  name:'张三',
+				  age:21,
+				  run:function(){
+				  	alert('方法创建!!!!');
+				  },
+				  studuy:function(){
+				  	alert('学习javascript'+arguments[1]);
+				  }
+			   };
+			   return stu;
+			}
+			
+			var stu = bb();
+			with(stu){
+				document.write(name);
+				document.write(age);
+			    studuy(12,'aaaa');
+			}
+		   stu = null;  //销毁对象
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

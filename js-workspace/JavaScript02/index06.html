@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function aaa(){
+				
+				var str = "我在学习JavaScript!!!!!";
+				document.write(str.length+'<br/>');
+				var chars = str.charAt(2);
+				document.write(chars+'<br/>');
+				
+				var str1 = '小白,小白!!!!';
+				str = str.concat(str1);
+				document.write(str+'<br/>');
+				
+				var index= str.indexOf('!');
+				document.write(index+'<br/>');
+				
+				var index= str.lastIndexOf('!');
+				document.write(index+'<br/>');
+				
+				var newStr = str.replace('!!!!','****');
+				document.write(newStr+'<br/>');
+				
+				var str2 = str.slice(2,5);
+				document.write(str2+'<br/>');
+				
+				var str3 = '1,3,6,kk,ee,33,343';
+				var arrs = str3.split(',');
+				document.write(arrs[0]+'<br/>');
+				
+				var str4 = str3.substr(0,2);
+				document.write(str4+'<br/>');
+				
+				var str5 = str3.substring(0,4);
+				document.write(str5+'<br/>');
+			  }
+			
+			aaa();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

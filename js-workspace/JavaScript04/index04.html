@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<ul>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+			<li>文本段落</li>
+		</ul>
+	</body>
+</html>
+<script>
+	   var obj = document.getElementsByTagName('ul')[0];
+	   for (var i = 0; i < 	obj.childNodes.length; i++) {
+	   	          var ss = obj.childNodes[i];
+	              if(ss.nodeType==1)
+	              {
+	              	  //alert(ss.nodeName);
+	              }else if(ss.nodeType==2){
+	              	//alert(ss.textContent);
+	              }else{
+	              	//alert(ss.nodeValue);
+	              }
+	   }
+	  
+	   var firstobj =  obj.firstChild;
+	   //alert(firstobj.nodeValue);
+	   
+	   var lastobj = obj.lastChild;
+	   //alert(firstobj.nodeValue);
+	   
+	   
+	   alert(obj.parentNode.nodeName);//获取父节点的标签名
+       alert(obj.lastChild.previousSibling.nodeName);//获取前一个同级节点
+       alert(obj.firstChild.nextSibling.nodeName);	 //获取后一个同级节点
+</script>

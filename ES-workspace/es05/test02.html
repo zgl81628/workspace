@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let p = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log('执行完毕！');
+                resolve();
+                //表示完成
+            }, 3000)
+        });
+        p.then(() => {
+            console.log('promise异步操作完成了');
+        });
+
+
+        let p1 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                //console.log('脱完衣服');
+                resolve(3);
+            }, 3000)
+        });
+        p1.then((d) => {
+            console.log('去洗' + d + '件衣服');
+        });
+        /// 打印去洗3件衣服
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

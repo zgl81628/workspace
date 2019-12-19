@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			html,*{
+			padding: 0;
+			margin: 0;	
+			font: normal normal 14px "微软雅黑";
+			
+			}
+			
+			.p01{
+				font-size: 48px;
+			}
+			
+			.p02{
+				color: red;
+			}
+			ul>li>span>.p01{
+				color: orange;
+			}
+			
+			#dd02>div{
+				color: greenyellow;
+			}
+			#dd02>div~p{
+				color: #ADFF2F;
+			}
+		</style>
+	</head>
+	<body>
+		<p>是否大是大非</p>
+		<h1 class="p01 p02">sdfsdf </h1>
+		<div id="dd01">
+		<ul>
+			<li><span><a class="p01">水电费水电费</a></span></li>
+			<li><span>水电费水电费</span></li>
+			<li><span>水电费水电费</span></li>
+			<li><span>水电费水电费</span>
+			
+			<ul>
+			<li><span>水电费水电费</span></li>
+			<li><span>水电费水电费</span></li>
+			<li><span>水电费水电费</span></li>
+			<li><span>水电费水电费</span></li>
+		    </ul>
+			</li>
+		</ul>
+		</div>
+		
+		<div id="dd02">
+			<p>是的发生的</p>
+			<div>1</div>
+			<p>123123</p>
+			<p>是的发生的</p>
+			<section>
+			   <div>2</div>
+			   <p>是的发生的</p>
+			</section>
+		</div>
+		
+	</body>
+</html>

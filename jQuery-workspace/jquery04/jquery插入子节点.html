@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#d01").append("<a href='#'>首页</a>");
+            $("<p>着使用一个段落</p>").appendTo($("#d01"));
+            $("#d02").prepend("<a href='#'>首页</a>");
+            $("<p>着使用一个段落</p>").prependTo($("#d02"));
+        });
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="d01">
+        <h1>追加插入</h1>
+    </div>
+
+    <hr />
+    <div id="d02">
+        <h1>前置插入</h1>
+    </div>
+</body>
+
+</html>

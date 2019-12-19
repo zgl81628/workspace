@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		 <div id="box">
+		<p >我是小白!!!!</p>
+		<p  id="div01">我是小白!!!!哈哈哈哈哈</p>
+		</div>
+	</body>
+</html>
+
+<script>
+	  var box = document.getElementById('box');
+	  var obj = document.createElement('p');//创建元素节点
+	  //obj.innerText ='新的p标签';
+	  var objtxt = document.createTextNode('新的p标签');//创建文本节点
+	  obj.style.color = 'red';
+	  obj.appendChild(objtxt);
+	  box.appendChild(obj);
+   
+   
+   
+     var obj1 = document.getElementById('div01');
+     var div01 = obj1.cloneNode(true);//创建新的克隆对象
+     div01.style.color = 'gold';
+     box.insertBefore(div01,obj1);
+     
+     //var new_p = obj;
+     var new_p = obj.cloneNode(true);
+     box.replaceChild(new_p,obj1);
+     
+     
+    box.removeChild(new_p);
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			  function select_one(obj)
+			  {
+			  	//obj.options[obj.options.length] = new Option('2006','2005');
+			  	var option01 = new Option('2006','2005'); 
+			  	obj.appendChild(option01);
+			  	
+			  	for (var i = 0; i<obj.options.length;i++) {
+			  		if(obj.options[i].selected)
+			  		{
+			  			alert(obj.options[i].text);
+			  		}
+			  	}
+			  }
+		</script>
+	</head>
+	<body>
+		<select name="aaa" onchange="select_one(this)">
+			 <option value="2000">2000</option>
+			 <option value="2000">2001</option>
+			 <option value="2000">2002</option>
+			 <option value="2000">2003</option>
+			 <option value="2000">2004</option>
+		</select>
+	</body>
+</html>

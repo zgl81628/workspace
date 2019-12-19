@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.live {
+				position: relative;
+				width: 300px;
+				height: 300px;
+			}
+			
+			.live img {
+				width: 300px;
+				height: 300px;
+				z-index: 0;
+			}
+			
+			.live span {
+				position: absolute;
+				/*display: inline-block;*/
+				width: 200px;
+				height: 200px;
+				left: 0;
+				bottom: 0;
+				background: #fff;
+				border-radius: 50%;
+				-webkit-animation: living 3s linear infinite;
+				z-index: 1;
+			}
+			
+			.innerSpan {
+				-webkit-animation-delay: 1.5s;
+				/*第二个span动画延迟1.5秒*/
+			}
+			
+			@keyframes living {
+				0% {
+					transform: scale(1);
+					opacity: 0.5;
+				}
+				50% {
+					transform: scale(1.5);
+					opacity: 0;
+					/*圆形放大的同时，透明度逐渐减小为0*/
+				}
+				100% {
+					transform: scale(1);
+					opacity: 0.5;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="live">
+			<img src="img/2019-09-30_151501.png" alt="">
+			<span class="outSpan"></span>
+			<span class="innerSpan"></span>
+		</div>
+	</body>
+
+</html>

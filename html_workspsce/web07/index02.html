@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body,*{
+				padding: 0;
+				margin: 0;
+			}
+			#d01{
+				width: 330px;
+				height: 100px;
+				background: url(img/2019-10-10_102101.png) 0 0 no-repeat;
+				float: left;
+			}
+			#d02{
+				float: left;
+				margin-left: 30px;
+				margin-top: 5px;
+			}
+			#d02 form input{
+				width: 300px;
+				height: 35px;
+				border: 3px solid red;
+			}
+			#d02 form button{
+				width: 100px;
+				background-color: red;
+				border: none;
+				color: white;
+				margin-left: -5px;
+				font: normal bolder 16px "微软雅黑";
+				line-height: 41px;
+				display: block;
+				float: right;
+			}
+			#d03{
+				width: 100px;
+				height: 100px;
+				background: url(img/2019-10-10_102119.png) 0 0 no-repeat;
+				float: left;
+				margin-left: 30px;
+				padding-left: 40px;
+			}
+			#d03 p{
+				font: normal normal 14px "微软雅黑";
+				/*line-height: 8px;*/
+				margin-top: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<div id="d01"></div>
+		<div id="d02">
+			<form action="" method="get">
+			<input type="text" name="bookname" placeholder="书名-作者"/>	
+			<button type="submit">搜索</button>
+			<p>这里显示一段文字</p>
+			</form>
+		</div>
+		<div id="d03">
+			<p>网站购物车0 本</p>
+			<p>店铺购物车0 本</p>
+		</div>
+		</div>
+	</body>
+</html>

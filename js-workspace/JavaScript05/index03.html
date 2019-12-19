@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function check_all(obj){
+				var checks = document.getElementsByName('aaa');
+				 for (var i = 0; i < checks.length; i++) {
+				 	checks[i].checked = obj.checked;
+				 }
+			}
+			
+			function check_false(){
+				var checks = document.getElementsByName('aaa');
+				 for (var i = 0; i < checks.length; i++) {
+				 	checks[i].checked = !checks[i].checked;
+				 }
+			}
+		</script>
+	</head>
+	<body>
+		  <input  type="checkbox" name="ccc"  onclick="check_all(this)"/>全选
+		  <input  type="checkbox" name="bbb"  onclick="check_false()"/>反选
+		  <ul>
+		  	<li><input  type="checkbox" name="aaa" />aaa
+		  	</li>
+		  </ul>
+		  <ul>
+		  	<li><input  type="checkbox" name="aaa" />aaa
+		  	</li>
+		  </ul>
+		  <ul>
+		  	<li><input  type="checkbox" name="aaa" />aaa
+		  	</li>
+		  </ul>
+		  <ul>
+		  	<li><input  type="checkbox" name="aaa" />aaa
+		  	</li>
+		  </ul>
+		  <ul>
+		  	<li><input  type="checkbox" name="aaa" />aaa
+		  	</li>
+		  </ul>
+	</body>
+</html>

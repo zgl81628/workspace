@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let map = new Map();
+        map.set(1, 2);
+        map.set('name', 123);
+
+        for (let key of map.keys()) {
+            console.log(key);
+        }
+
+        for (let vlaue of map.values()) {
+            console.log(vlaue);
+        }
+
+        for (let [key, value] of map.entries()) {
+            console.log(key, value);
+        }
+
+        map.forEach((value, key, ouwemap) => console.log(key, value));
+
+        map.f
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

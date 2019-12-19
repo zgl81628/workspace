@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function clk()
+			{
+//				var obj = document.getElementById('uname');
+//				alert(obj.value);
+//				var obj = document.getElementsByClassName('uname');
+//				alert(obj[0].value);
+
+                 var obj = document.getElementsByName('uname');
+                 var obj1 = document.getElementsByName('txt');
+				 //alert(obj[0].value);
+				 obj1[0].value = obj[0].value;
+			}
+		</script>
+	</head>
+	<body>
+		<input id="uname" class="aaa"  type="text" name="uname"/>
+		
+		<button type="button" onclick="clk()">计算</button>
+		<input type="text" name="txt" value="123123" />
+	</body>
+</html>

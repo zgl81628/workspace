@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function aa(){
+				//alert(arguments[0]); 闭包
+				var s = arguments[0];
+				return function bb(){
+					alert(s);
+				}
+			}
+			var kk = aa(123,456);
+			kk();
+			//bb();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

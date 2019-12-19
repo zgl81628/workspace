@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var prefix = "user_";
+        var o = {
+            baz: function() {
+
+            },
+            [prefix + 'bar']: function() {
+                return 'word';
+            }
+        };
+        o[prefix + 'foo'] = function() { //[]中可以放任意合法表达式
+            return 'hello';
+        }
+        console.log(o.user_foo());
+        console.log(o.user_bar());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

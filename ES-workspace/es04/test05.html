@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //ES6简洁写法
+        var x = 2,
+            y = 3,
+            o = {
+                x, //属性名和赋值变量名相同时，可简写
+                y
+            };
+        console.log(o);
+
+        //计算属性
+        let propKey = 'foo';
+        let obj = { //ES6
+            [propKey]: true,
+            ['b' + 'ar']: 123
+        };
+        console.log(obj); //Object { foo: true, bar: 123 }
+
+
+        let obj01 = {
+            ['h' + 'ello']() {
+                return 'hi';
+            }
+        };
+        console.log(obj01.hello()); // hi
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

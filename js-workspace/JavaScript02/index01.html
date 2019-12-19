@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function aa(){
+				var arrs = [1,2,3];
+				var arrs1 = ['张三','李四','王五'];
+				
+				var arrs2 = arrs.concat(arrs1);
+				
+				for(var n in arrs2){
+					document.write(n+'---'+arrs2[n]+'<br/>');
+				}
+				
+				document.write('<hr/>');
+				var str = arrs2.join('-');
+				document.write(str);
+				document.write('<hr/>');
+				var res = arrs2.reverse();
+				
+				for(var n in res){
+					document.write(n+'---'+arrs2[n]+'<br/>');
+				}
+				document.write('<hr/>');
+				
+				var ss = arrs2.pop();
+				document.write(ss+'长度:'+arrs2.length);
+				document.write('<hr/>');
+				
+				var len = arrs2.push('a','b');
+				document.write('新长度:'+len);
+				document.write('<hr/>');
+				
+				 var sss = arrs2.shift();
+				 document.write(sss+'  长度:'+arrs2.length);
+				 document.write('<hr/>');
+			
+			     var arrs3 = arrs2.splice(1,3);
+			     document.write(arrs3+'<br/>');
+			     document.write(arrs2);
+			      document.write('<hr/>');
+			      
+			     var sarrs = arrs3.sort();
+			     document.write(sarrs);
+			     document.write('<hr/>');
+			      
+			     document.write(arrs3.toString());
+			}
+			aa();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

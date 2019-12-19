@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.container{
+				width: 80%;
+				margin: 0 auto;
+				display: flex;
+				flex-flow: row wrap;
+			}
+			.items{
+				width: 100px;
+				height: 100px;
+				display: flex;
+				justify-content: center;
+				border: 1px solid #FFD700;
+				margin:10px;
+			}
+			.item{
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+			}
+			
+			
+			.item_rotate{
+				transition: all 1s;
+			}
+			
+		    .item_rotate:hover{
+		    	/*transform: rotate(45deg);*/
+		    	transform: rotate(45deg);
+		    }
+		    
+		    .item_skew{
+				transition: all 1s;
+			}
+			.item_skew:hover{
+				/*transform: skewX(20deg);*/
+				transform: skewY(20deg);
+			}
+			.item_scale{
+				transition: all 1s;
+			}
+			.item_scale:hover{
+				transform: scale(-1.5);
+			}
+			.item_translatex{
+				transition: all 1s;
+			}
+			.item_translatex:hover{
+				transform: translateX(30px);
+			}
+			.item_translatey{
+				transition: all 1s;
+			}
+			.item_translatey:hover{
+				transform: translateY(30px);
+			}
+			
+			.item_translate{
+				transition: all 1s;
+			}
+			.item_translate:hover{
+				transform: translate(30px,30px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="items">
+				<div class="item item_rotate">rotateX</div>
+			</div>
+			<div class="items">
+				<div class="item item_skew"></div>
+			</div>
+			<div class="items">
+				<div class="item item_scale"></div>
+			</div>
+			<div class="items">
+				<div class="item item_translatex"></div>
+			</div>
+			<div class="items">
+				<div class="item item_translatey"></div>
+			</div>
+			<div class="items">
+				<div class="item item_translate"></div>
+			</div>
+		</div>
+	</body>
+</html>

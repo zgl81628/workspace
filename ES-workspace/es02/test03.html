@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let numbers = [1, 2, 3, 4, 5];
+        let find_el = numbers.find(n => n > 3);
+        let find_index = numbers.findIndex(n => n < 3);
+        console.log(find_el);
+        console.log(find_index);
+
+        let a = [1, 2, 3].includes(2); // true
+        let b = [1, 2, 3].includes(4); // false
+        let c = [1, 2, NaN].includes(NaN); // true
+        console.log(`${a}----${b}-----${c}`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

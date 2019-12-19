@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			:root{
+				border: 1px solid #ADFF2F;
+			}
+			.div01:first-child>p{
+				background-color: #FF7F50;
+			}
+			.div03:last-child{
+				background-color: #ADFF2F;
+			}
+			span:only-child{
+				background-color: red;
+			}
+			div:first-of-type{
+				background-color: red;
+			}
+			.div02{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #FF0000;
+			}
+			div:empty{
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<p class="div02"></p>
+		<p>水电费水电费</p>
+		</div>
+		<div class="div01">
+			<div>1</div>
+			<p>222222</p>
+			<div>2</div>
+			<div class="dd">3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+		</div>
+		
+		<div class="div02">
+			
+		</div>
+		<div class="div03">
+			<span>111111</span>
+		</div>
+	</body>
+</html>

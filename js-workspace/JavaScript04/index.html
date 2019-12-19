@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.aaa{
+				color: hotpink;
+				font-size: 24px;
+			}
+		</style>
+		<script>
+			function btn_clik(){
+				var obj = document.getElementById('input01');
+//				obj.style.fontFamily='微软雅黑';
+//				obj.style.color = 'red';
+//				obj.style.marginTop = '100px';
+                obj.className = 'aaa';
+				obj.value='张三';
+			}
+		</script>
+	</head>
+	<body>
+		   <input id="input01"  type="txt" name='uname '/>
+		   <button onclick="btn_clik()">按钮</button>
+	</body>
+</html>

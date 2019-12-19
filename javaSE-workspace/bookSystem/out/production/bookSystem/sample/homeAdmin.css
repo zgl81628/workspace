@@ -1,0 +1,8 @@
+.button{
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+AnchorPane{
+    -fx-background-image:url(./pic/homeAdmin.png);
+}

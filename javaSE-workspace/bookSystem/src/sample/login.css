@@ -1,0 +1,13 @@
+AnchorPane{
+    -fx-background-image:url(./pic/login.png);
+}
+.text-field{
+   -fx-background-color: transparent;
+   -fx-border-width: 0;
+}
+.button{
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("p").css({
+                "color": "red",
+                "border": "aqua 1px solid",
+                "opacity": "0.4"
+            });
+            $("ul>li").hover(function() {
+                $(this).toggleClass("hobrt");
+            }, function() {
+                $(this).toggleClass("hobrt");
+            });
+        });
+    </script>
+    <style>
+        .hobrt {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <p>水电费水电费水电费</p>
+    <ul>
+        <li>首页</li>
+        <li>电饭锅</li>
+        <li>快快快</li>
+        <li>呜呜呜呜</li>
+        <li>免费</li>
+    </ul>
+</body>
+
+</html>

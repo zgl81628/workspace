@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>标题</title>
+        <meta charset="utf-8">
+        <style>
+            #d1{
+                width:100px;
+                height:100px;
+                border:2px solid red;
+                background:yellow;
+                font-size:28px;
+                font-weight:bold;
+                text-align:center;
+                line-height:100px;
+                border-radius:50%;
+                /* 指定属性 对性能会有优化 哪些属性才有动效 其他的就不用检测了 */
+                transition-property:transform background width height line-height font-size;
+                /*2、时长*/
+                transition-duration:5s;
+                /*3、速度*/
+                transition-timing-function:linear;
+            }
+
+            #d1:hover{
+            /* 指定旋转圆心 */
+                transform-origin:center center;/* left top /10px 10px ..*/
+            /* 要先指定方向再指定角度不然会乱 */
+                transform:translateX(800px) rotate(1080deg);
+                background:red;
+                width:200px;
+                height:200px;
+                line-height:200px;
+                font-size:60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1">
+            	滚
+        </div>
+    </body>
+</html>

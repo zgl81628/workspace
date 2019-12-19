@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播图</title>
+		<style>
+			
+			#container{
+				width: 300px;
+				height: 150px;
+				border: 1px solid #00BFFF;
+				overflow: hidden;
+			}
+			.list{
+				width: 910px;
+				height: 150px;
+				position: relative;
+				animation: go 6s linear 0s infinite alternate;
+			}
+			.list>img{
+				float: left;
+				margin-left: 2px;
+			}
+			
+			@keyframes go{
+				0%,30%{
+					left:0px;
+				}
+				40%,70%{
+					left: -300px;
+				}
+				100%{
+					left:-600px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+		  <div class="list">
+			<img src="img/001.jpg" width="300px" height="150px"/>
+			<img src="img/002.jpg" width="300px" height="150px"/>
+			<img src="img/003.jpg" width="300px" height="150px"/>
+		  </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <meta charset="utf-8" />
+          <title></title>
+          <style type="text/css">
+              #d1{
+                  width: 200px;
+                  height: 200px;
+                 background: skyblue;
+                 transform: rotate(0deg);
+                 
+                 /*过渡效果*/
+                 /*transition:height 2s,transform 3s,background 2s;*/
+                 /*transition: all 2s linear;*/
+                 /*过渡的属性*/
+                 transition-property: all;
+                 /*过渡所消耗的时间*/
+                 transition-duration: 2s;
+                 /*过渡变化的速度
+                  linear线性速度
+                  ease/ease-in/ease-out
+                  cubic-bezier(0.57,-0.34, 0.37, 1.44)
+                  * */
+                 transition-timing-function: cubic-bezier(0.57,-0.34, 0.37, 1.44);
+                 /*过渡的延迟时间*/
+                 /*transition-delay: 2s;*/
+             }
+             /*鼠标悬浮上去的状态*/
+             #d1:hover{
+                 height: 400px;
+                 transform: rotate(360deg);
+                 background: purple;
+             }
+         </style>
+     </head>
+     <body>
+         <div id="d1">
+             
+         </div>
+     </body>
+</html>

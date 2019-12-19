@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            // var flag = false;
+            // $("#btn").on('click', function() {
+            //     if (!flag) {
+            //         $("#d01").hide(1000);
+            //         flag = true;
+            //     } else {
+            //         $("#d01").show(1000);
+            //         flag = false;
+            //     }
+            // })
+
+            $("#btn").on('click', function() {
+                $("#d01").toggle(1000);
+            });
+        });
+    </script>
+    <style>
+        #d01 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d01"></div>
+    <button id="btn">隐藏/显示</button>
+</body>
+
+</html>

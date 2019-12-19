@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body,*{
+				padding: 0;
+				margin: 0;
+			}
+			ol,ul{
+				list-style: none;
+			}
+			#jiu{
+				width: 300px;
+				overflow: hidden;
+			}
+			#jiu ul li{
+				width: 70px;
+				height: 70px;
+				border: 1px solid #000000;
+				float: left;
+				margin-left: 5px;
+				margin-top: 5px;
+			}
+			.c01{
+				background-image: url(img/timg.jpg);
+				background-repeat: no-repeat;
+				background-position: -10px -10px;
+				background-size: 300px 300px;
+			}
+			.c02{
+				background-image: url(img/timg.jpg);
+				background-repeat: no-repeat;
+				background-position: -82px -82px;
+				background-size: 300px 300px;
+			}
+			.c03{
+				background: url(img/timg.jpg) -10px -82px no-repeat;
+				background-size: 300px 300px;
+			}
+			.c04{
+				background: url(img/timg.jpg) -152px -10px no-repeat;
+				background-size: 300px 300px;
+			}
+			.c001{
+				width: 50px;
+				height: 150px;
+				background: url(img/timg.jpg) -152px -10px no-repeat;
+				background-size: 300px 300px;
+				float: left;
+				display: none;
+			}
+			#jiu ul li:hover div{
+				display: block;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<div id="jiu">
+			<ul>
+				<li class="c01"></li>
+				<li class="c02"></li>
+				<li class="c03"></li>
+				<li class="c04"></li>
+				<li>
+					<div class="c001"></div><span>水电费水电费</span>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>

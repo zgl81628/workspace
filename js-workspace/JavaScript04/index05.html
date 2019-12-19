@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box" ss='我是的发生的'> div节点</div>
+	</body>
+</html>
+<script>
+	var ats = document.getElementById('box').attributes	//NamedNodeMap
+	document.write(ats+'<hr/>');2
+    var lens = document.getElementById('box').attributes.length;//返回属性节点个数
+    document.write(lens+'<hr/>');
+    var attrs =document.getElementById('box').attributes[0];	//Attr，返回最后一个属
+    document.write(attrs+'<hr/>');
+    var attrs1 =document.getElementById('box').attributes[0].nodeType; //2，节点类型
+     document.write(attrs1+'<hr/>');
+	var attrs2 =document.getElementById('box').attributes[1].nodeValue; //属性值
+	 document.write(attrs2+'<hr/>');
+	var attrs3 =document.getElementById('box').attributes['id'];//Attr，返回属性为id
+	 document.write(attrs3+'<hr/>');
+	var attrs4 =document.getElementById('box').attributes.getNamedItem('id');//Attr
+     document.write(attrs4.nodeValue+'<hr/>');
+</script>

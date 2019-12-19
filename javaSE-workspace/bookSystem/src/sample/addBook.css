@@ -1,0 +1,35 @@
+AnchorPane{
+    -fx-background-image:url(./pic/addBook.png);
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+.button{
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+
+.table-view {
+    -fx-background-color: transparent;
+}
+.table-column {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+.table-row-cell {
+    -fx-cell-size:45;
+    -fx-font-size:19;
+}
+.table-view .column-header-background {
+    -fx-font-size:21;
+    -fx-background-color:#f1f3f4;
+    -fx-alignment: center;
+    -fx-cell-size:60;
+}
+.table-view.filler {
+    -fx-background-color:transparent;
+    -fx-font-size:19;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>要被赋值的内容</p>
+	</body>
+</html>
+<script>
+	     document.onkeydown = function(e){
+	     	if(e.ctrlKey && (e.keyCode == 86 || e.keyCode == 67))
+	     	{
+	     		return false;
+	     	}
+	     	window.alert('你要复制什么?crtl+c');
+	     }
+</script>

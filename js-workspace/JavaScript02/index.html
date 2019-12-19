@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script>
+			function aa(){
+				var arrs = new Array();
+				
+				var arrs1 = new Array(10);
+				
+				var arrs2 = new Array(1,2,4,5,7,10);
+				for(var n in arrs2){
+					document.write(n+'---'+arrs2[n]+'<br/>');
+				}
+				
+				var arrs3 = [1,4,32,5,5,6];
+				document.write(arrs3);
+				
+				document.write('<hr/>');
+				var arrs4 = [];
+				arrs4.length = 5;
+				arrs4[0] = 'tom';
+				arrs4[2] = 12;
+				
+				for(var i=0; i<arrs4.length; i++){
+					document.write(i+'---'+arrs4[i]+'<br/>');
+				}
+			}
+			
+			aa();
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			html,body,div {
+		    margin: 0;
+		    padding: 0;
+		    font-family: "微软雅黑";
+            text-align: center;
+		  }
+		  .container {
+		    position: relative;
+		    padding: 20px;
+		    width: 960px;
+		    height: 500px;
+		    font-size: 36px;
+		    text-transform: uppercase;
+		  }
+		  .list{
+		  	height: 60px;
+		  	overflow: hidden;
+		  }
+		  .list>div>div{
+			display: inline-block;
+		    height: 50px;
+		    color:#fff;
+		    margin-bottom: 50px;
+		    padding: 4px 12px;
+		  }
+		  
+		  .d01{
+		  	background-color: #42c58a;
+		  }
+		  .d02{
+		  	 background-color: #4ec7f3;
+		  }
+		  .d03{
+		  	 background-color: #DC143C;
+		  }
+		  
+		  @keyframes loop{
+		  	0%{margin-top: 0px;}
+		  	10%{margin-top: 0px;}
+		  	40%{margin-top: -100px;}
+		  	50%{margin-top: -100px;}
+		  	80%{margin-top: -200px;}
+		  	100%{margin-top: -200px;}
+		  }
+		  .list div:first-child{
+		  	animation: loop 5s linear 0s infinite alternate;
+		  }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		  LIFE IS A GIRL.
+		  <div class="list">
+		    <div><div class="d01">特别鸣谢</div></div>
+		    <div><div class="d02">Charles Yang</div></div>
+		    <div><div class="d03">Marvel</div></div>
+		  </div>
+		  Hail Hydra!
+		</div>
+	</body>
+</html>

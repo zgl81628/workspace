@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690" prefWidth="450" stylesheets="@signin.css" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Signin">
+   <children>
+      <TextField fx:id="idText" layoutX="76.0" layoutY="229.0" prefHeight="38.0" prefWidth="202.0" promptText="用户名">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="passwordText" layoutX="79.0" layoutY="310.0" prefHeight="38.0" prefWidth="202.0" promptText="密码">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="emailText" layoutX="80.0" layoutY="395.0" prefHeight="41.0" prefWidth="221.0" promptText="电子邮箱">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="numText" layoutX="82.0" layoutY="476.0" promptText="验证码">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Button fx:id="sendButton" layoutX="320.0" layoutY="404.0" mnemonicParsing="false" onAction="#click_sendButton" prefHeight="30.0" prefWidth="82.0" />
+      <Button fx:id="confirmButton" layoutX="76.0" layoutY="595.0" mnemonicParsing="false" onAction="#click_confirmButton" prefHeight="47.0" prefWidth="304.0" />
+      <Button fx:id="btn_close" layoutX="408.0" layoutY="-1.0" mnemonicParsing="false" onAction="#click_btn_close" prefHeight="41.0" prefWidth="41.0" />
+      <Button fx:id="btn_min" layoutX="367.0" layoutY="-1.0" mnemonicParsing="false" onAction="#click_btn_min" prefHeight="41.0" prefWidth="41.0" />
+   </children>
+</AnchorPane>

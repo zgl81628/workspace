@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1,.box2,.box3,.box4,.box5{
+			    width: 100px;
+			    height: 100px;
+			    margin: 30px;
+			    background-color: aquamarine;
+			    float: left;
+			    transition: all 250ms ease;  /*过渡*/
+			}
+			.box1:hover{
+			    transform: rotate(45deg);    /*一中心为原点旋转*/
+			}
+			.box2:hover{
+			    transform: rotate(45deg);
+			    transform-origin: left center;  /*调整中心点*/
+			}
+			.box3:hover{
+			    transform: rotate(45deg);
+			    transform-origin: right center;
+			}
+			.box4:hover{
+			    transform: rotate(45deg);
+			    transform-origin: top center;
+			}
+			.box5:hover{
+			    transform: rotate(45deg);
+			    transform-origin: 50px 50px;    /*块为坐标*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		<div class="box5"></div>
+	</body>
+</html>

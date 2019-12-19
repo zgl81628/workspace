@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        class User {
+            uname = '';
+            password = '';
+            constructor(x, y) {
+                this.uname = x;
+                this.password = y;
+            }
+
+            find() {
+                console.log(`反倒是士大夫打发点${this.uname}`);
+            }
+        }
+
+        class Emp extends User {
+
+            age = 0;
+
+            constructor(x, y, age) {
+                super(x, y);
+                this.age = age;
+            }
+
+            print() {
+                console.log(`${this.uname}---${this.password}----${this.age}`);
+            }
+        }
+
+        let user = new User('sdf', 'sdf');
+        user.find();
+
+        let emp = new Emp('张三', '1231244', 21);
+        emp.print();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("li:gt(3)").hide();
+            var flag = false;
+
+            $("#aaa").click(function() {
+                if (!flag) {
+                    $("li:gt(3)").show();
+                    flag = true;
+                } else {
+                    $("li:gt(3)").hide();
+                    flag = false;
+                }
+            })
+        });
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>spark</li>
+        <li>ios</li>
+        <li>网络安全</li>
+        <li>java</li>
+        <li>python</li>
+        <li>java</li>
+        <li>mysql</li>
+        <li>jquery</li>
+    </ul>
+    <a id="aaa" href="#">更多排名</a>
+</body>
+
+</html>

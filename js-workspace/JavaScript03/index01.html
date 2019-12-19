@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>	
+			//返回值： 
+			//oNewWindow:对象(Element)。返回对新的window对象的引用。
+			var new_win = null;
+			function open_win(){
+			   new_win = window.open('index.html','new_win','location=0,menubar=0,toolbar=0,width=400,height=400');
+			}  
+			
+			function change_px(){
+				new_win.moveTo(200,200);
+			}
+			function change_size()
+			{
+				new_win.resizeTo(100,100);
+			}
+			
+		</script>
+	</head>
+	<body>
+		<button onclick="open_win()">打开新窗口</button>
+		<button onclick="change_px()">移动</button>
+		<button onclick="change_size()">改变大小</button>
+	</body>
+</html>

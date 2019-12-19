@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.cl:focus{
+				background-color: #00FFFF;
+			}
+			.cl01:checked+span{
+				background-color: coral;
+			}
+			button:enabled{
+				background-color: #ADFF2F;
+			}
+			button:disabled{
+				background-color: #00FFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			姓名:<input class="cl" type="text" name="uname" /><br/>
+		       性别:<input class="cl01" type="checkbox" name="sex" value="0" checked="checked"/><span>男</span>
+		       <input class="cl01" type="checkbox" name="sex" value="1"/><span>女</span>
+		       <input class="cl01" type="checkbox" name="sex" value="2"/><span>非男</span>
+		       <button type="submit" disabled="disabled">提交</button>
+		       <button type="submit">注册</button>
+		   </form>
+	</body>
+</html>

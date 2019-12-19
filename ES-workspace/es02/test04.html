@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // let arr = ['a', 'b', 'c'];
+        // let iterator = arr.keys()
+        // for (let key of iterator) {
+        //     console.log(key); // expected output: 0 1 2
+        // }
+
+        // let arr = ['a', 'b', 'c'];
+        // let iterator = arr.values();
+
+        // for (const value of iterator) {
+        //     console.log(value); // expected output: "a" "b" "c"
+        // }
+
+        var arr = ["a", "b", "c"];
+        var iter = arr.entries();
+        var a = [];
+
+
+        for (var i = 0; i < arr.length + 1; i++) { // 注意，是length+1，比数组的长度大
+            var tem = iter.next(); // 每次迭代时更新next
+            console.log(tem.done); // 这里可以看到更新后的done都是false
+            if (tem.done !== true) { // 遍历迭代器结束done才是true
+                console.log(tem.value);
+                a[i] = tem.value;
+            }
+        }
+
+        console.log(a); // 遍历完毕，输出next.value的数组
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [09/Dec/2019:11:23:56 +0800] "GET /lesson01 HTTP/1.1" 302 - http-bio-8090-exec-1 0
+0:0:0:0:0:0:0:1 - - [09/Dec/2019:11:23:56 +0800] "GET /lesson01/ HTTP/1.1" 200 52 http-bio-8090-exec-3 824
+0:0:0:0:0:0:0:1 - - [09/Dec/2019:11:24:11 +0800] "GET /lesson01/index.jsp HTTP/1.1" 200 52 http-bio-8090-exec-5 16
+0:0:0:0:0:0:0:1 - - [09/Dec/2019:11:24:39 +0800] "GET /lesson01/index.jsp HTTP/1.1" 200 58 http-bio-8090-exec-8 48
+0:0:0:0:0:0:0:1 - - [09/Dec/2019:11:24:49 +0800] "GET /lesson01 HTTP/1.1" 302 - http-bio-8090-exec-1 0
+0:0:0:0:0:0:0:1 - - [09/Dec/2019:11:24:50 +0800] "GET /lesson01/ HTTP/1.1" 200 58 http-bio-8090-exec-1 2
+0:0:0:0:0:0:0:1 - - [09/Dec/2019:11:25:21 +0800] "GET /lesson01/hello HTTP/1.1" 200 20 http-bio-8090-exec-5 4
